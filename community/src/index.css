@@ -1,0 +1,87 @@
+#root {
+    border: none;
+    margin: 0px;
+}
+#container {
+    width: 1340px;
+    margin: 0px auto;
+}
+@media screen and (max-width: 1340px){
+    #container{
+        width: auto;
+    }
+}
+header {
+    display: flex;
+    border: 2px solid black;
+    height: 100px;
+}
+#header_logo {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    left: 58px
+}
+main {
+    display: flex;
+}
+ul {
+    margin: 0 auto;
+}
+li {
+    margin: 20px 0;
+    list-style: none;
+    font-size: 20px;
+    text-align: center;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(47, 0, 255);
+}
+#sidebar {
+    border: 2px solid black;
+    border-top: none;
+    width: 20%;
+    height: auto;
+}
+#contents {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 80%;
+    min-height: 1200px;
+    height: auto;
+    overflow: auto;
+}
+#login_btn{
+    margin-right: 5px;
+}
+p#userId{
+    display: inline;
+    margin-right: 5px;
+}
+#chatgpt{
+    position: absolute;
+    top: 230px;
+    right: 15px;
+}
+#chatgpt #request_text{
+    resize: none;
+    font-size: 16px;
+    width: 250px;
+    height: 300px;
+    overflow: auto;
+}
+#chatgpt button{
+    display: block;
+}
+#chatgpt #response_text{
+    border: 1px solid black;
+    font-size: 14px;
+    width: 250px;
+    height: 300px;
+    overflow: auto;
+}

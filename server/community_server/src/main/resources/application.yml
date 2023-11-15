@@ -1,0 +1,50 @@
+# Server port
+# service port 9090
+# session timeout 30분, Default 기본단위 : 초
+server:
+  port: 8080
+  servlet:
+    context-path: /
+    encoding:
+      enabled: true
+      charset: UTF-8
+      force: true
+    session:
+      timeout: 18000      
+
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: post_db
+  ## db연결 설정 
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/user_info
+    # Postgresql Database
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Wjddyd@0215
+    
+  ## JPA Setting Info
+  # ddl-auto create, create-drop, update, validate, none
+  # diarect 쿼리의 기준이 되는 데이터베이스 엔진을 설정
+  # show_sql sql 쿼리를 보여 준다.
+  # use_sql_comments  sql 쿼리의 추가정보를 보여 준다.
+#  jpa:
+#    hibernate:
+#      ddl-auto: validate 
+#    properties:
+#      hibernate:
+#        diarect: org.hibernate.dialect.PostgreSQL10Dialect
+#        show_sql: true
+#        format_sql: true
+#        use_sql_comments: true
+#
+#logging:
+#  level:
+#    org:
+#      hibernate:
+#        type:
+#          descriptor:
+#            sql: trace  # query의 ?에 어떤 값이 들어가는지 추적할 수 있는 설정. TRACE Log에 값을 보여 준다.

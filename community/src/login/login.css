@@ -1,0 +1,9 @@
+#login{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+input{
+    display: block;
+    margin: 5px 0;   
+}
